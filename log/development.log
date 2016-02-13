@@ -1,0 +1,570 @@
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-12 19:16:10 -0500
+
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+):
+  activerecord (4.2.5.1) lib/active_record/migration.rb:392:in `check_pending!'
+  activerecord (4.2.5.1) lib/active_record/migration.rb:373:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5.1) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/diwu/.rbenv/versions/2.1.5/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/diwu/.rbenv/versions/2.1.5/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/diwu/.rbenv/versions/2.1.5/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/diwu/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.3ms)
+  Rendered /Users/diwu/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/diwu/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /Users/diwu/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (18.6ms)
+  Rendered /Users/diwu/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/diwu/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/diwu/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/diwu/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/diwu/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (19.3ms)
+  Rendered /Users/diwu/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/diwu/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/diwu/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (39.0ms)
+  [1m[36m (1.2ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (1.0ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateSimpleSearches (20160213001537)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "simple_searches" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "keywords" varchar, "location" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160213001537"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-12 19:16:26 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /Users/diwu/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/railties-4.2.5.1/lib/rails/templates/rails/welcome/index.html.erb (0.5ms)
+Completed 200 OK in 11ms (Views: 3.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-12 19:16:56 -0500
+Processing by SimpleSearchesController#new as HTML
+  Rendered simple_searches/_form.html.erb (14.9ms)
+  Rendered simple_searches/new.html.erb within layouts/application (15.9ms)
+Completed 200 OK in 1122ms (Views: 1116.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-12 19:45:31 -0500
+Processing by SimpleSearchesController#new as HTML
+Completed 500 Internal Server Error in 47ms (ActiveRecord: 1.4ms)
+
+NameError (uninitialized constant SimpleSearch::Faraday):
+  app/models/simple_search.rb:8:in `initialize'
+  app/controllers/simple_searches_controller.rb:17:in `new'
+
+
+  Rendered /Users/diwu/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (226.4ms)
+  Rendered /Users/diwu/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (30.0ms)
+  Rendered /Users/diwu/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (5.9ms)
+  Rendered /Users/diwu/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (288.2ms)
+  Rendered /Users/diwu/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (2.0ms)
+  Rendered /Users/diwu/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (2.4ms)
+  Rendered /Users/diwu/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.6ms)
+  Rendered /Users/diwu/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (2.0ms)
+  Rendered /Users/diwu/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (41.5ms)
+  Rendered /Users/diwu/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (1.1ms)
+  Rendered /Users/diwu/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.2ms)
+  Rendered /Users/diwu/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (93.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-12 19:45:47 -0500
+Processing by SimpleSearchesController#new as HTML
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms)
+
+NameError (uninitialized constant SimpleSearch::Faraday):
+  app/models/simple_search.rb:8:in `initialize'
+  app/controllers/simple_searches_controller.rb:17:in `new'
+
+
+  Rendered /Users/diwu/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (238.0ms)
+  Rendered /Users/diwu/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (26.3ms)
+  Rendered /Users/diwu/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (5.5ms)
+  Rendered /Users/diwu/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (294.6ms)
+  Rendered /Users/diwu/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.5ms)
+  Rendered /Users/diwu/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered /Users/diwu/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.1ms)
+  Rendered /Users/diwu/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.0ms)
+  Rendered /Users/diwu/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (31.1ms)
+  Rendered /Users/diwu/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (1.1ms)
+  Rendered /Users/diwu/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.2ms)
+  Rendered /Users/diwu/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (62.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-12 19:46:08 -0500
+Processing by SimpleSearchesController#new as HTML
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.0ms)
+
+LoadError (cannot load such file -- faraday):
+  app/models/simple_search.rb:1:in `<top (required)>'
+  app/controllers/simple_searches_controller.rb:17:in `new'
+
+
+  Rendered /Users/diwu/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (143.9ms)
+  Rendered /Users/diwu/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (48.4ms)
+  Rendered /Users/diwu/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (4.4ms)
+  Rendered /Users/diwu/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (222.2ms)
+  Rendered /Users/diwu/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.7ms)
+  Rendered /Users/diwu/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.2ms)
+  Rendered /Users/diwu/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.6ms)
+  Rendered /Users/diwu/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.5ms)
+  Rendered /Users/diwu/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (42.1ms)
+  Rendered /Users/diwu/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (1.4ms)
+  Rendered /Users/diwu/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.4ms)
+  Rendered /Users/diwu/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (81.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-12 19:46:18 -0500
+Processing by SimpleSearchesController#new as HTML
+Completed 500 Internal Server Error in 37ms (ActiveRecord: 1.8ms)
+
+NameError (uninitialized constant Faraday):
+  app/models/simple_search.rb:8:in `initialize'
+  app/controllers/simple_searches_controller.rb:17:in `new'
+
+
+  Rendered /Users/diwu/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (267.6ms)
+  Rendered /Users/diwu/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (33.4ms)
+  Rendered /Users/diwu/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (4.5ms)
+  Rendered /Users/diwu/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (328.8ms)
+  Rendered /Users/diwu/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.9ms)
+  Rendered /Users/diwu/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.2ms)
+  Rendered /Users/diwu/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.2ms)
+  Rendered /Users/diwu/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.4ms)
+  Rendered /Users/diwu/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (37.4ms)
+  Rendered /Users/diwu/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (1.8ms)
+  Rendered /Users/diwu/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.6ms)
+  Rendered /Users/diwu/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (91.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-12 19:47:05 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SimpleSearchesController#new as HTML
+  Rendered simple_searches/_form.html.erb (102.5ms)
+  Rendered simple_searches/new.html.erb within layouts/application (116.5ms)
+Completed 200 OK in 1319ms (Views: 1255.7ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/assets/simple_searches.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-02-12 19:47:06 -0500
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-02-12 19:47:07 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for 127.0.0.1 at 2016-02-12 19:47:07 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for 127.0.0.1 at 2016-02-12 19:47:07 -0500
+
+
+Started GET "/assets/simple_searches.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-02-12 19:47:07 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-02-12 19:47:07 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-02-12 19:47:07 -0500
+
+
+Started GET "/assets/scaffolds.self-52ada07549e3f223f43dd720a27228638295b97f9ddb484c828dc1da05760dd7.css?body=1" for 127.0.0.1 at 2016-02-12 19:47:07 -0500
+
+
+Started POST "/simple_searches" for 127.0.0.1 at 2016-02-12 19:47:12 -0500
+Processing by SimpleSearchesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"85YL+anprqn+4ExRTUPIBxIz45vzOBuZg6qaOO6rDA4tDpgl3tOKNTcW32GlpzrquagWAjqAu9Q769T8yywpzA==", "simple_search"=>{"keywords"=>"d", "location"=>"d"}, "commit"=>"Create Simple search"}
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.0ms)
+
+ArgumentError (wrong number of arguments (1 for 0)):
+  app/models/simple_search.rb:5:in `initialize'
+  app/controllers/simple_searches_controller.rb:27:in `create'
+
+
+  Rendered /Users/diwu/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (292.6ms)
+  Rendered /Users/diwu/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (33.3ms)
+  Rendered /Users/diwu/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (4.8ms)
+  Rendered /Users/diwu/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (353.6ms)
+  Rendered /Users/diwu/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.7ms)
+  Rendered /Users/diwu/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.4ms)
+  Rendered /Users/diwu/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.4ms)
+  Rendered /Users/diwu/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.3ms)
+  Rendered /Users/diwu/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (34.1ms)
+  Rendered /Users/diwu/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (1.6ms)
+  Rendered /Users/diwu/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.4ms)
+  Rendered /Users/diwu/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (70.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-12 19:54:07 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (9.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SimpleSearchesController#new as HTML
+  Rendered simple_searches/_form.html.erb (90.2ms)
+  Rendered simple_searches/new.html.erb within layouts/application (101.0ms)
+Completed 200 OK in 1279ms (Views: 1235.2ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-12 19:54:08 -0500
+Processing by SimpleSearchesController#new as HTML
+  Rendered simple_searches/_form.html.erb (23.7ms)
+  Rendered simple_searches/new.html.erb within layouts/application (28.3ms)
+Completed 200 OK in 248ms (Views: 241.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/simple_searches" for 127.0.0.1 at 2016-02-12 19:54:14 -0500
+Processing by SimpleSearchesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5+mjrmkCm+9Bcjs1Je7AFi1rme5JH4K1bjP01ziH9aA5cTByHji/c4iEqAXNCjL7hvBsd4CnIvjWcroTHQDQYg==", "simple_search"=>{"keywords"=>"d", "location"=>"d"}, "commit"=>"Create Simple search"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "simple_searches" ("keywords", "location", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["keywords", "d"], ["location", "d"], ["created_at", "2016-02-13 01:04:46.095452"], ["updated_at", "2016-02-13 01:04:46.095452"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+Redirected to http://localhost:3000/simple_searches/1
+Completed 302 Found in 631714ms (ActiveRecord: 1.1ms)
+
+
+Started GET "/simple_searches/1" for 127.0.0.1 at 2016-02-12 20:04:46 -0500
+Processing by SimpleSearchesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSimpleSearch Load (0.2ms)[0m  [1mSELECT  "simple_searches".* FROM "simple_searches" WHERE "simple_searches"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered simple_searches/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 27ms (Views: 19.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-12 20:05:32 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SimpleSearchesController#new as HTML
+  Rendered simple_searches/_form.html.erb (90.7ms)
+  Rendered simple_searches/new.html.erb within layouts/application (99.8ms)
+Completed 200 OK in 1256ms (Views: 1209.5ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-12 20:05:33 -0500
+Processing by SimpleSearchesController#new as HTML
+  Rendered simple_searches/_form.html.erb (20.8ms)
+  Rendered simple_searches/new.html.erb within layouts/application (24.4ms)
+Completed 200 OK in 229ms (Views: 222.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/simple_searches" for 127.0.0.1 at 2016-02-12 20:22:17 -0500
+Processing by SimpleSearchesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wNRPGg4Dtm6sjqQnMeef3Q3PfujI1q9nhYfBRR2yDyIeTNzGeTmS8mV4NxfZA20wplSLcQFuDyo9xo+BODUq4A==", "simple_search"=>{"keywords"=>"d", "location"=>"d"}, "commit"=>"Create Simple search"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "simple_searches" ("keywords", "location", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["keywords", "d"], ["location", "d"], ["created_at", "2016-02-13 01:23:36.368890"], ["updated_at", "2016-02-13 01:23:36.368890"]]
+  [1m[35m (1.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/simple_searches/2
+Completed 302 Found in 78601ms (ActiveRecord: 1.6ms)
+
+
+Started GET "/simple_searches/2" for 127.0.0.1 at 2016-02-12 20:23:36 -0500
+Processing by SimpleSearchesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mSimpleSearch Load (0.1ms)[0m  [1mSELECT  "simple_searches".* FROM "simple_searches" WHERE "simple_searches"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered simple_searches/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 22ms (Views: 16.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-12 20:49:31 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SimpleSearchesController#new as HTML
+  Rendered simple_searches/_form.html.erb (106.2ms)
+  Rendered simple_searches/new.html.erb within layouts/application (118.5ms)
+Completed 200 OK in 1414ms (Views: 1362.3ms | ActiveRecord: 1.6ms)
+
+
+Started POST "/simple_searches" for 127.0.0.1 at 2016-02-12 20:49:42 -0500
+Processing by SimpleSearchesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"lVaXPUQSqM0WN4CTwTYryr/DyGs16fXOefw4o3YnGwFLzgThMyiMUd/BE6Mp0tknFFg98vxRVYPBvXZnU6A+ww==", "simple_search"=>{"keywords"=>"sales", "location"=>"atlanta"}, "commit"=>"Create Simple search"}
+Completed   in 113313ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-02-12 21:09:25 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SimpleSearchesController#new as HTML
+  Rendered simple_searches/_form.html.erb (15.0ms)
+  Rendered simple_searches/new.html.erb within layouts/application (20.8ms)
+Completed 200 OK in 393ms (Views: 376.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2016-02-12 21:10:16 -0500
+Processing by SimpleSearchesController#new as HTML
+  Rendered simple_searches/_form.html.erb (13.9ms)
+  Rendered simple_searches/new.html.erb within layouts/application (14.9ms)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `value' for #<ActionView::Helpers::FormBuilder:0x007fafbb5c9c80>):
+    20:     <%= f.text_field :location %>
+    21:   </div>
+    22:   <div class="actions">
+    23:     <%= f.value :search %>
+    24:     <%= f.submit %>
+    25:   </div>
+    26: <% end %>
+  app/views/simple_searches/_form.html.erb:23:in `block in _app_views_simple_searches__form_html_erb__3161575852637141738_70196369998760'
+  app/views/simple_searches/_form.html.erb:1:in `_app_views_simple_searches__form_html_erb__3161575852637141738_70196369998760'
+  app/views/simple_searches/new.html.erb:3:in `_app_views_simple_searches_new_html_erb___3284741313846292485_70196369118460'
+
+
+  Rendered /Users/diwu/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.8ms)
+  Rendered /Users/diwu/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.8ms)
+  Rendered /Users/diwu/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /Users/diwu/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (61.9ms)
+  Rendered /Users/diwu/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/diwu/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/diwu/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/diwu/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/diwu/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (49.0ms)
+  Rendered /Users/diwu/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/diwu/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/diwu/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (114.5ms)
+
+
+Started GET "/" for ::1 at 2016-02-12 21:10:55 -0500
+Processing by SimpleSearchesController#new as HTML
+  Rendered simple_searches/_form.html.erb (2.4ms)
+  Rendered simple_searches/new.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 21ms (Views: 20.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/simple_searches.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-12 21:10:55 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-12 21:10:55 -0500
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-02-12 21:10:55 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-12 21:10:55 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-12 21:10:56 -0500
+
+
+Started GET "/assets/simple_searches.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-12 21:10:56 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-12 21:10:56 -0500
+
+
+Started GET "/assets/scaffolds.self-52ada07549e3f223f43dd720a27228638295b97f9ddb484c828dc1da05760dd7.css?body=1" for ::1 at 2016-02-12 21:10:56 -0500
+
+
+Started GET "/" for ::1 at 2016-02-12 21:14:56 -0500
+Processing by SimpleSearchesController#new as HTML
+  Rendered simple_searches/_form.html.erb (2.0ms)
+  Rendered simple_searches/new.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 22ms (Views: 16.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-02-12 21:14:56 -0500
+
+
+Started GET "/assets/scaffolds.self-52ada07549e3f223f43dd720a27228638295b97f9ddb484c828dc1da05760dd7.css?body=1" for ::1 at 2016-02-12 21:14:56 -0500
+
+
+Started GET "/assets/simple_searches.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-12 21:14:56 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-12 21:14:56 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-12 21:14:56 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-12 21:14:56 -0500
+
+
+Started GET "/assets/simple_searches.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-12 21:14:56 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-12 21:14:56 -0500
+
+
+Started GET "/" for ::1 at 2016-02-12 21:16:18 -0500
+Processing by SimpleSearchesController#new as HTML
+  Rendered simple_searches/_form.html.erb (1.7ms)
+  Rendered simple_searches/new.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 16ms (Views: 15.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/scaffolds.self-52ada07549e3f223f43dd720a27228638295b97f9ddb484c828dc1da05760dd7.css?body=1" for ::1 at 2016-02-12 21:16:18 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-12 21:16:18 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-12 21:16:18 -0500
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-02-12 21:16:18 -0500
+
+
+Started GET "/assets/simple_searches.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-12 21:16:18 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-12 21:16:18 -0500
+
+
+Started GET "/assets/simple_searches.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-12 21:16:18 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-12 21:16:18 -0500
+
+
+Started GET "/" for ::1 at 2016-02-12 21:16:19 -0500
+Processing by SimpleSearchesController#new as HTML
+  Rendered simple_searches/_form.html.erb (1.4ms)
+  Rendered simple_searches/new.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 15ms (Views: 14.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/simple_searches.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-12 21:16:19 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-12 21:16:19 -0500
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-02-12 21:16:19 -0500
+
+
+Started GET "/assets/scaffolds.self-52ada07549e3f223f43dd720a27228638295b97f9ddb484c828dc1da05760dd7.css?body=1" for ::1 at 2016-02-12 21:16:19 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-12 21:16:19 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-12 21:16:19 -0500
+
+
+Started GET "/assets/simple_searches.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-12 21:16:19 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-12 21:16:19 -0500
+
+
+Started GET "/" for ::1 at 2016-02-12 21:24:22 -0500
+Processing by SimpleSearchesController#new as HTML
+  Rendered simple_searches/_form.html.erb (1.4ms)
+  Rendered simple_searches/new.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 15ms (Views: 14.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/simple_searches.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-12 21:24:22 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-12 21:24:22 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-12 21:24:22 -0500
+
+
+Started GET "/assets/simple_searches.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-12 21:24:22 -0500
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-02-12 21:24:22 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-12 21:24:22 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-12 21:24:22 -0500
+
+
+Started GET "/assets/scaffolds.self-52ada07549e3f223f43dd720a27228638295b97f9ddb484c828dc1da05760dd7.css?body=1" for ::1 at 2016-02-12 21:24:22 -0500
+
+
+Started GET "/" for ::1 at 2016-02-12 21:25:17 -0500
+Processing by SimpleSearchesController#new as HTML
+  Rendered simple_searches/_form.html.erb (1.3ms)
+  Rendered simple_searches/new.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 18ms (Views: 17.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/scaffolds.self-52ada07549e3f223f43dd720a27228638295b97f9ddb484c828dc1da05760dd7.css?body=1" for ::1 at 2016-02-12 21:25:17 -0500
+
+
+Started GET "/assets/simple_searches.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-12 21:25:17 -0500
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-02-12 21:25:17 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-12 21:25:17 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-12 21:25:17 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-12 21:25:17 -0500
+
+
+Started GET "/assets/simple_searches.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-12 21:25:17 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-12 21:25:17 -0500
+
+
+Started GET "/" for ::1 at 2016-02-12 21:27:31 -0500
+Processing by SimpleSearchesController#new as HTML
+  Rendered simple_searches/_form.html.erb (1.7ms)
+  Rendered simple_searches/new.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 16ms (Views: 15.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/scaffolds.self-52ada07549e3f223f43dd720a27228638295b97f9ddb484c828dc1da05760dd7.css?body=1" for ::1 at 2016-02-12 21:27:31 -0500
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-02-12 21:27:31 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-12 21:27:31 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-12 21:27:31 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-12 21:27:31 -0500
+
+
+Started GET "/assets/simple_searches.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-12 21:27:31 -0500
+
+
+Started GET "/assets/simple_searches.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-12 21:27:31 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-12 21:27:31 -0500

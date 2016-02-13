@@ -1,0 +1,27 @@
+<%= form_for(@simple_search) do |f| %>
+  <% if @simple_search.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@simple_search.errors.count, "error") + I18n.t('simple_search.errors.validation_error') %></h2>
+
+      <ul>
+      <% @simple_search.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="simple_search">
+    <div class="keywords inline_search">
+      <%= f.label :keywords %><br>
+      <%= f.text_field :keywords, :placeholder => I18n.t('simple_search.placeholder.keywords') %>
+    </div>
+    <div class="location inline_search">
+      <%= f.label :location %><br>
+      <%= f.text_field :location, :placeholder => I18n.t('simple_search.placeholder.location') %>
+    </div>
+    <div class="actions inline_search">
+      <%= f.submit %>
+    </div>
+  </div>
+<% end %>

@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Simple Searches</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Keywords</th>
+      <th>Location</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @simple_searches.each do |simple_search| %>
+      <tr>
+        <td><%= simple_search.keywords %></td>
+        <td><%= simple_search.location %></td>
+        <td><%= link_to 'Show', simple_search %></td>
+        <td><%= link_to 'Edit', edit_simple_search_path(simple_search) %></td>
+        <td><%= link_to 'Destroy', simple_search, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Simple search', new_simple_search_path %>

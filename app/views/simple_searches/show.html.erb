@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Keywords:</strong>
+  <%= @simple_search.keywords %>
+</p>
+
+<p>
+  <strong>Location:</strong>
+  <%= @simple_search.location %>
+</p>
+
+<%= link_to 'Edit', edit_simple_search_path(@simple_search) %> |
+<%= link_to 'Back', simple_searches_path %>
