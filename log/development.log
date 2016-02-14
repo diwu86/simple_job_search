@@ -11487,3 +11487,211 @@ Processing by SimpleSearchesController#create as HTML
   Rendered simple_searches/index.html.erb within layouts/application (27.6ms)
   Rendered layouts/_top_navigator.html.erb (0.1ms)
 Completed 200 OK in 3390ms (Views: 45.8ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/simple_searches" for ::1 at 2016-02-13 22:36:34 -0500
+Processing by SimpleSearchesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8Dc1YMtl+OeTLMNOWANjJM79wOM11O21k++Gie3kXLyWIlMaPwrxTUxwSX9Dnh5mCzz1d/a18lLWjAQnfEEAFw==", "simple_search"=>{"keywords"=>"sales", "location"=>"atlanta"}, "commit"=>"Find Jobs"}
+  Rendered simple_searches/_form.html.erb (1.5ms)
+  Rendered simple_searches/_search_result.html.erb (0.7ms)
+  Rendered simple_searches/_search_result.html.erb (0.1ms)
+  Rendered simple_searches/_search_result.html.erb (0.1ms)
+  Rendered simple_searches/_search_result.html.erb (0.2ms)
+  Rendered simple_searches/_search_result.html.erb (0.1ms)
+  Rendered simple_searches/_search_result.html.erb (0.1ms)
+  Rendered simple_searches/_search_result.html.erb (0.2ms)
+  Rendered simple_searches/_search_result.html.erb (0.1ms)
+  Rendered simple_searches/_search_result.html.erb (0.0ms)
+  Rendered simple_searches/_search_result.html.erb (0.1ms)
+  Rendered simple_searches/_search_result.html.erb (0.1ms)
+  Rendered simple_searches/_search_result.html.erb (0.1ms)
+  Rendered simple_searches/_search_result.html.erb (0.1ms)
+  Rendered simple_searches/_search_result.html.erb (0.1ms)
+  Rendered simple_searches/_search_result.html.erb (0.1ms)
+  Rendered simple_searches/_search_result.html.erb (0.1ms)
+  Rendered simple_searches/_search_result.html.erb (0.1ms)
+  Rendered simple_searches/_search_result.html.erb (0.1ms)
+  Rendered simple_searches/_search_result.html.erb (0.0ms)
+  Rendered simple_searches/_search_result.html.erb (0.1ms)
+  Rendered simple_searches/_search_result.html.erb (0.1ms)
+  Rendered simple_searches/_search_result.html.erb (0.1ms)
+  Rendered simple_searches/_search_result.html.erb (0.0ms)
+  Rendered simple_searches/_search_result.html.erb (0.1ms)
+  Rendered simple_searches/_search_result.html.erb (0.1ms)
+  Rendered simple_searches/_pagination.html.erb (0.1ms)
+  Rendered simple_searches/index.html.erb within layouts/application (27.2ms)
+  Rendered layouts/_top_navigator.html.erb (0.0ms)
+Completed 200 OK in 1370ms (Views: 47.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-02-13 23:00:15 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SimpleSearchesController#new as HTML
+  Rendered simple_searches/_form.html.erb (8.8ms)
+  Rendered simple_searches/new.html.erb within layouts/application (12.8ms)
+  Rendered layouts/_top_navigator.html.erb (0.3ms)
+Completed 200 OK in 185ms (Views: 173.7ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/simple_searches" for ::1 at 2016-02-13 23:00:45 -0500
+Processing by SimpleSearchesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"FHfUGkTA6a1EW05I9ZzR2aW0RFIAiG7wqqFTgnfnOgZyYrJgsK/gB5sHxHnuAaybYHVxxsPpcRfvwtEs5kJmrQ==", "simple_search"=>{"keywords"=>"sales", "location"=>"atlanta"}, "commit"=>"Find Jobs"}
+  Rendered simple_searches/_form.html.erb (1.1ms)
+  Rendered simple_searches/_search_result.html.erb (0.4ms)
+  Rendered simple_searches/_search_result.html.erb (0.0ms)
+  Rendered simple_searches/_search_result.html.erb (0.1ms)
+  Rendered simple_searches/_search_result.html.erb (0.1ms)
+  Rendered simple_searches/_search_result.html.erb (0.1ms)
+  Rendered simple_searches/_search_result.html.erb (0.1ms)
+  Rendered simple_searches/_search_result.html.erb (0.1ms)
+  Rendered simple_searches/_search_result.html.erb (0.1ms)
+  Rendered simple_searches/_search_result.html.erb (0.1ms)
+  Rendered simple_searches/_search_result.html.erb (0.1ms)
+  Rendered simple_searches/_search_result.html.erb (0.1ms)
+  Rendered simple_searches/_search_result.html.erb (0.1ms)
+  Rendered simple_searches/_search_result.html.erb (0.1ms)
+  Rendered simple_searches/_search_result.html.erb (0.1ms)
+  Rendered simple_searches/_search_result.html.erb (0.1ms)
+  Rendered simple_searches/_search_result.html.erb (0.1ms)
+  Rendered simple_searches/_search_result.html.erb (0.1ms)
+  Rendered simple_searches/_search_result.html.erb (0.1ms)
+  Rendered simple_searches/_search_result.html.erb (0.1ms)
+  Rendered simple_searches/_search_result.html.erb (0.1ms)
+  Rendered simple_searches/_search_result.html.erb (0.1ms)
+  Rendered simple_searches/_search_result.html.erb (0.1ms)
+  Rendered simple_searches/_search_result.html.erb (0.1ms)
+  Rendered simple_searches/_search_result.html.erb (0.1ms)
+  Rendered simple_searches/_search_result.html.erb (0.1ms)
+  Rendered simple_searches/_pagination.html.erb (0.8ms)
+  Rendered simple_searches/index.html.erb within layouts/application (27.2ms)
+  Rendered layouts/_top_navigator.html.erb (0.0ms)
+Completed 200 OK in 4939ms (Views: 39.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/simple_searches" for ::1 at 2016-02-13 23:02:34 -0500
+Processing by SimpleSearchesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"FHfUGkTA6a1EW05I9ZzR2aW0RFIAiG7wqqFTgnfnOgZyYrJgsK/gB5sHxHnuAaybYHVxxsPpcRfvwtEs5kJmrQ==", "simple_search"=>{"keywords"=>"sales", "location"=>"atlanta"}, "commit"=>"Find Jobs"}
+  Rendered simple_searches/_form.html.erb (1.4ms)
+  Rendered simple_searches/_search_result.html.erb (0.7ms)
+  Rendered simple_searches/_search_result.html.erb (0.1ms)
+  Rendered simple_searches/_search_result.html.erb (0.1ms)
+  Rendered simple_searches/_search_result.html.erb (0.1ms)
+  Rendered simple_searches/_search_result.html.erb (0.1ms)
+  Rendered simple_searches/_search_result.html.erb (0.1ms)
+  Rendered simple_searches/_search_result.html.erb (0.1ms)
+  Rendered simple_searches/_search_result.html.erb (0.1ms)
+  Rendered simple_searches/_search_result.html.erb (0.1ms)
+  Rendered simple_searches/_search_result.html.erb (0.1ms)
+  Rendered simple_searches/_search_result.html.erb (0.1ms)
+  Rendered simple_searches/_search_result.html.erb (0.1ms)
+  Rendered simple_searches/_search_result.html.erb (0.1ms)
+  Rendered simple_searches/_search_result.html.erb (0.1ms)
+  Rendered simple_searches/_search_result.html.erb (0.1ms)
+  Rendered simple_searches/_search_result.html.erb (0.1ms)
+  Rendered simple_searches/_search_result.html.erb (0.1ms)
+  Rendered simple_searches/_search_result.html.erb (0.1ms)
+  Rendered simple_searches/_search_result.html.erb (0.1ms)
+  Rendered simple_searches/_search_result.html.erb (0.1ms)
+  Rendered simple_searches/_search_result.html.erb (0.1ms)
+  Rendered simple_searches/_search_result.html.erb (0.1ms)
+  Rendered simple_searches/_search_result.html.erb (0.1ms)
+  Rendered simple_searches/_search_result.html.erb (0.1ms)
+  Rendered simple_searches/_search_result.html.erb (0.1ms)
+  Rendered simple_searches/_pagination.html.erb (0.2ms)
+  Rendered simple_searches/index.html.erb within layouts/application (27.3ms)
+  Rendered layouts/_top_navigator.html.erb (0.0ms)
+Completed 200 OK in 1990ms (Views: 40.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/scaffolds.self-208920d67a2deeb71656bc1d8def69aa6ce0a948c36cca1b6c23c37a3fafda5e.css?body=1" for ::1 at 2016-02-13 23:02:36 -0500
+
+
+Started GET "/assets/simple_searches.self-056dde6112340f403209287d94930bb1aa4114aca99afbcfaa73b2bf317b0b16.css?body=1" for ::1 at 2016-02-13 23:02:36 -0500
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-02-13 23:02:36 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-13 23:02:36 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-13 23:02:36 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-13 23:02:36 -0500
+
+
+Started GET "/assets/simple_searches.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-13 23:02:36 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-13 23:02:36 -0500
+
+
+Started GET "/simple_searches?keywords=sales&location=atlanta&page=2" for ::1 at 2016-02-13 23:02:45 -0500
+Processing by SimpleSearchesController#index as HTML
+  Parameters: {"keywords"=>"sales", "location"=>"atlanta", "page"=>"2"}
+  Rendered simple_searches/_form.html.erb (1.5ms)
+  Rendered simple_searches/_search_result.html.erb (0.2ms)
+  Rendered simple_searches/_search_result.html.erb (0.1ms)
+  Rendered simple_searches/_search_result.html.erb (0.1ms)
+  Rendered simple_searches/_search_result.html.erb (0.1ms)
+  Rendered simple_searches/_search_result.html.erb (0.2ms)
+  Rendered simple_searches/_search_result.html.erb (0.1ms)
+  Rendered simple_searches/_search_result.html.erb (0.1ms)
+  Rendered simple_searches/_search_result.html.erb (0.2ms)
+  Rendered simple_searches/_search_result.html.erb (0.1ms)
+  Rendered simple_searches/_search_result.html.erb (0.1ms)
+  Rendered simple_searches/_search_result.html.erb (0.1ms)
+  Rendered simple_searches/_search_result.html.erb (0.1ms)
+  Rendered simple_searches/_search_result.html.erb (0.1ms)
+  Rendered simple_searches/_search_result.html.erb (0.1ms)
+  Rendered simple_searches/_search_result.html.erb (0.1ms)
+  Rendered simple_searches/_search_result.html.erb (0.1ms)
+  Rendered simple_searches/_search_result.html.erb (0.1ms)
+  Rendered simple_searches/_search_result.html.erb (0.1ms)
+  Rendered simple_searches/_search_result.html.erb (0.1ms)
+  Rendered simple_searches/_search_result.html.erb (0.1ms)
+  Rendered simple_searches/_search_result.html.erb (0.1ms)
+  Rendered simple_searches/_search_result.html.erb (0.1ms)
+  Rendered simple_searches/_search_result.html.erb (0.1ms)
+  Rendered simple_searches/_search_result.html.erb (0.1ms)
+  Rendered simple_searches/_search_result.html.erb (0.1ms)
+  Rendered simple_searches/_pagination.html.erb (0.3ms)
+  Rendered simple_searches/index.html.erb within layouts/application (28.9ms)
+  Rendered layouts/_top_navigator.html.erb (0.0ms)
+Completed 200 OK in 1304ms (Views: 44.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/simple_searches" for ::1 at 2016-02-13 23:02:57 -0500
+Processing by SimpleSearchesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RrapeOIEkc4+MJj2f4aBRvFov5IM6IdCG4WPNM0ZPzAgo88CFmuYZOFsEsdkG/wENKmKBs+JmKVe5g2aXLxjmw==", "simple_search"=>{"keywords"=>"sales", "location"=>"new york"}, "commit"=>"Find Jobs"}
+  Rendered simple_searches/_form.html.erb (1.5ms)
+  Rendered simple_searches/_search_result.html.erb (0.2ms)
+  Rendered simple_searches/_search_result.html.erb (0.1ms)
+  Rendered simple_searches/_search_result.html.erb (0.1ms)
+  Rendered simple_searches/_search_result.html.erb (0.2ms)
+  Rendered simple_searches/_search_result.html.erb (0.1ms)
+  Rendered simple_searches/_search_result.html.erb (0.1ms)
+  Rendered simple_searches/_search_result.html.erb (0.1ms)
+  Rendered simple_searches/_search_result.html.erb (0.1ms)
+  Rendered simple_searches/_search_result.html.erb (0.1ms)
+  Rendered simple_searches/_search_result.html.erb (0.1ms)
+  Rendered simple_searches/_search_result.html.erb (0.1ms)
+  Rendered simple_searches/_search_result.html.erb (0.1ms)
+  Rendered simple_searches/_search_result.html.erb (0.1ms)
+  Rendered simple_searches/_search_result.html.erb (0.1ms)
+  Rendered simple_searches/_search_result.html.erb (0.1ms)
+  Rendered simple_searches/_search_result.html.erb (0.2ms)
+  Rendered simple_searches/_search_result.html.erb (0.1ms)
+  Rendered simple_searches/_search_result.html.erb (0.1ms)
+  Rendered simple_searches/_search_result.html.erb (0.1ms)
+  Rendered simple_searches/_search_result.html.erb (0.2ms)
+  Rendered simple_searches/_search_result.html.erb (0.1ms)
+  Rendered simple_searches/_search_result.html.erb (0.1ms)
+  Rendered simple_searches/_search_result.html.erb (0.1ms)
+  Rendered simple_searches/_search_result.html.erb (0.2ms)
+  Rendered simple_searches/_search_result.html.erb (0.1ms)
+  Rendered simple_searches/_pagination.html.erb (0.2ms)
+  Rendered simple_searches/index.html.erb within layouts/application (27.7ms)
+  Rendered layouts/_top_navigator.html.erb (0.0ms)
+Completed 200 OK in 1380ms (Views: 45.2ms | ActiveRecord: 0.0ms)

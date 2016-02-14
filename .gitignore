@@ -12,7 +12,7 @@ db/*.sqlite3
 
 # Ignore all log and temp files.
 /log/*.log
-/tmp/*
+/tmp
 
 # Ignore all doc and coverage files
 /doc

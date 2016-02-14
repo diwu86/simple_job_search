@@ -13,15 +13,16 @@
           <% end %>
         </div>
         <div class="location">
-          <span>Location: <%= result['Location'].first %></span>
+          <span><%= I18n.t('simple_search.search_result.location') %><%= result['Location'].first %></span>
         </div>
         <div class="date">
-          <span>Posted Date: <%= result['PostedDate'].first %></span>
+          <span><%= I18n.t('simple_search.search_result.date') %><%= result['PostedDate'].first %></span>
         </div>
         <div class="description">
           <p><%= result['DescriptionTeaser'].first %></p>
         </div>
       </div>
+      <hr/>
     </td>
   </tr>
 </div>

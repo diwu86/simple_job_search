@@ -25,6 +25,9 @@ en:
     new:
       title: "Helping people through their career journey."
     search: "Find Jobs"
+    search_result:
+      location: "Location: "
+      date: "Posted Date: "
     placeholder:
       keywords: "e.g. Software Engineer or Sales"
       location: "e.g. Atlanta"
@@ -33,4 +36,7 @@ en:
       location: "Location"
     errors:
       validation_error: "prohibited this simple_search from being saved:"
+    pagination:
+      previous: "Previous"
+      next: "Next"
 
