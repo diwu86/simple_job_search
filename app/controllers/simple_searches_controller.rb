@@ -27,6 +27,8 @@ class SimpleSearchesController < ApplicationController
     end
   end
 
+  private
+
   def get_response(params)
     @simple_search.set_up_client
     @current_page = params[:page].nil? ? 1 : params[:page].to_i
@@ -40,9 +42,8 @@ class SimpleSearchesController < ApplicationController
     end
   end
 
-  private
-    # Never trust parameters from the scary internet, only allow the white list through.
-    def simple_search_params
-      params.require(:simple_search).permit(:keywords, :location)
-    end
+  # Never trust parameters from the scary internet, only allow the white list through.
+  def simple_search_params
+    params.require(:simple_search).permit(:keywords, :location)
+  end
 end
