@@ -15,3 +15,25 @@ $very_light_gray: #eeeeee;
 $light_gray: #dddddd;
 $gray: #CCCCCC;
 $dark_gray: #999999;
+
+.primary-button {
+    background-color: $lime;
+    box-sizing: border-box;
+    border-radius: 4px;
+
+    :hover {
+      background-color: $light_lime;
+      cursor: pointer;
+    }
+
+    input {
+      background-color: transparent;
+      color: white !important;
+    }
+
+    &.disabled {
+      background: #ecf7e2;
+      pointer-events: none;
+      cursor: default;
+    }
+}

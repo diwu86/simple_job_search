@@ -3,59 +3,7 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 @import 'base_style';
 
-.search_element {
-  display: inline-block;
-  border: none;
-  margin:10px;
-  line-height: 2;
-  width: 30%;
-  border-radius: 4px;
-  margin-top: -5px;
-
-  label {
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
-    color: white;
-    float: left;
-  }
-  input {
-    border: none;
-    border-radius: 2px;
-    box-shadow: none;
-    color: $sky_blue;
-    font-size: 1.5em;
-    height: 30px;
-    margin-top: .25em;
-    padding: .75em;
-    background: #fafafa;
-    border-color: #999;
-    outline: none;
-    width: 96%;
-  }
-
-  &.btn {
-    background-color: $lime;
-    box-sizing: border-box;
-    width: 25%;
-    height: 60px;
-
-    :hover {
-      background-color: $light_lime;
-      cursor: pointer;
-    }
-
-    input {
-      background-color:  $lime;
-      height: 52px;
-      color: white;
-    }
-
-
-  }
-}
-
-.simple_search {
+.simple-search {
   margin: 0 auto;
   text-align: center;
   width: 80%;
@@ -63,8 +11,39 @@
   border-radius: 8px;
   height: 80px;
   padding: 2.2em 2.5em;
-  border: none;
-  display: block;
+}
+
+.search-element {
+  display: inline-block;
+  margin:10px;
+  line-height: 2;
+  width: 30%;
+  margin-top: -5px;
+
+  label {
+    color: white;
+    float: left;
+  }
+
+  input {
+    border: none;
+    border-radius: 4px;
+    color: $sky_blue;
+    font-size: 1.5em;
+    height: 30px;
+    margin-top: .25em;
+    padding: .75em;
+    outline: none;
+    width: 96%;
+  }
+
+  &.primary-button {
+    height: 60px;
+
+    input {
+      height: 52px;
+    }
+  }
 }
 
 .results{
@@ -84,15 +63,12 @@
     .company-name, .location, .date{
       display: inline-block;
       margin-right: 10px;
-      text-decoration: none;
-
     }
 
     .company-name {
       font-family: monospace;
       font-size: large;
     }
-
   }
 
   a {
