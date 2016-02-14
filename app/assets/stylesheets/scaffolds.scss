@@ -1,3 +1,4 @@
+@import 'base_style';
 body {
   background-color: #fff;
   color: #333;
@@ -81,6 +82,6 @@ div {
     font-style: normal;
     display: block;
     text-align: center;
-    background-color: #1B7CB2;
+    background-color: $azure;
     padding: 2.2em 2.5em;
 }

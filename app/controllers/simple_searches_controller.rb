@@ -29,6 +29,7 @@ class SimpleSearchesController < ApplicationController
 
   private
 
+  # get response with params
   def get_response(params)
     @simple_search.set_up_client
     @current_page = params[:page].nil? ? 1 : params[:page].to_i

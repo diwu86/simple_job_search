@@ -1,6 +1,7 @@
 // Place all the styles related to the SimpleSearches controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+@import 'base_style';
 
 .search_element {
   display: inline-block;
@@ -22,7 +23,7 @@
     border: none;
     border-radius: 2px;
     box-shadow: none;
-    color: #09a0db;
+    color: $sky_blue;
     font-size: 1.5em;
     height: 30px;
     margin-top: .25em;
@@ -34,18 +35,18 @@
   }
 
   &.btn {
-    background-color: #85ce3f;
+    background-color: $lime;
     box-sizing: border-box;
     width: 25%;
     height: 60px;
 
     :hover {
-      background-color: #9dd865;
+      background-color: $light_lime;
       cursor: pointer;
     }
 
     input {
-      background-color:  #85ce3f;
+      background-color:  $lime;
       height: 52px;
       color: white;
     }
@@ -95,7 +96,7 @@
   }
 
   a {
-    color: #09a0db;
+    color: $sky_blue;
     text-decoration: none;
 
     &:hover {
