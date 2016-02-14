@@ -1,0 +1,27 @@
+<div class="search-result">
+  <tr>
+    <td colspan="100">
+      <div class="job-title">
+        <%= link_to result['JobTitle'].first, result['JobDetailsURL'].first %>
+      </div>
+      <div class="company-info">
+        <div class="company-name">
+          <% if result['CompanyDetailsURL'].first.empty? %>
+            <span><%= result['Company'].first %></span>
+          <% else %>
+            <%= link_to result['Company'].first, result['CompanyDetailsURL'].first %>
+          <% end %>
+        </div>
+        <div class="location">
+          <span>Location: <%= result['Location'].first %></span>
+        </div>
+        <div class="date">
+          <span>Posted Date: <%= result['PostedDate'].first %></span>
+        </div>
+        <div class="description">
+          <p><%= result['DescriptionTeaser'].first %></p>
+        </div>
+      </div>
+    </td>
+  </tr>
+</div>

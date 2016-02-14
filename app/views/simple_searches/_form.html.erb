@@ -12,16 +12,16 @@
   <% end %>
 
   <div class="simple_search">
-    <div class="keywords inline_search">
-      <%= f.label :keywords %><br>
+    <div class="keywords search_element">
+      <%= f.label I18n.t('simple_search.label.keywords') %><br>
       <%= f.text_field :keywords, :placeholder => I18n.t('simple_search.placeholder.keywords') %>
     </div>
-    <div class="location inline_search">
-      <%= f.label :location %><br>
+    <div class="location search_element">
+      <%= f.label I18n.t('simple_search.label.location') %><br>
       <%= f.text_field :location, :placeholder => I18n.t('simple_search.placeholder.location') %>
     </div>
-    <div class="actions inline_search">
-      <%= f.submit %>
+    <div class="actions search_element btn">
+      <%= f.submit I18n.t('simple_search.search')%>
     </div>
   </div>
 <% end %>

@@ -11,11 +11,15 @@ class SimpleSearch < ActiveRecord::Base
     end
   end
 
-  def get_search_result(page: 1)
-    search_client.post do |req|
-      req.url '/prod/search'
-      req.headers['Content-Type'] = 'application/json'
-      req.body = simple_search_body(page)
+  def get_search_result(page)
+    begin
+      search_client.post do |req|
+        req.url '/prod/search'
+        req.headers['Content-Type'] = 'application/json'
+        req.body = simple_search_body(page)
+      end
+    rescue => e
+      Rails.logger.error "API connection error " + e.message
     end
   end
 

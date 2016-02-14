@@ -4,7 +4,12 @@ class SimpleSearchesController < ApplicationController
   # GET /simple_searches
   # GET /simple_searches.json
   def index
-    @simple_searches = SimpleSearch.all
+    @simple_search =  SimpleSearch.new(keywords: params[:keywords], location: params[:location])
+    get_response(params)
+    respond_to do |format|
+      format.html { render :index}
+      format.json { render :index, status: 200 }
+    end
   end
 
   # GET /simple_searches/1
@@ -25,17 +30,11 @@ class SimpleSearchesController < ApplicationController
   # POST /simple_searches.json
   def create
     @simple_search = SimpleSearch.new(simple_search_params)
-    @simple_search.set_up_client
-    response = @simple_search.get_search_result
-    # respond_to do |format|
-    #   if @simple_search.save
-    #     format.html { redirect_to @simple_search, notice: 'Simple search was successfully created.' }
-    #     format.json { render :show, status: :created, location: @simple_search }
-    #   else
-    #     format.html { render :new }
-    #     format.json { render json: @simple_search.errors, status: :unprocessable_entity }
-    #   end
-    # end
+    get_response(params)
+    respond_to do |format|
+      format.html { render :index}
+      format.json { render :index, status: 200 }
+    end
   end
 
   # PATCH/PUT /simple_searches/1
@@ -59,6 +58,19 @@ class SimpleSearchesController < ApplicationController
     respond_to do |format|
       format.html { redirect_to simple_searches_url, notice: 'Simple search was successfully destroyed.' }
       format.json { head :no_content }
+    end
+  end
+
+  def get_response(params)
+    @simple_search.set_up_client
+    @current_page = params[:page].nil? ? 1 : params[:page].to_i
+    response = @simple_search.get_search_result(@current_page)
+    result = JSON.parse(response.body)
+    @search_results = result['ResponseJobSearch']
+    @total_page = @search_results['TotalPages'].first.to_i if @search_results
+    unless @search_results
+      @notice = result['message']
+      Rails.logger.error result['message']
     end
   end
 

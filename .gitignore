@@ -1,0 +1,26 @@
+.DS_Store
+.idea/*
+.sass-cache
+db/*.sqlite3
+# ignore pesky text editor backups
+*~
+*.swp
+*.swo
+
+# Ignore bundler config
+/.bundle
+
+# Ignore all log and temp files.
+/log/*.log
+/tmp/*
+
+# Ignore all doc and coverage files
+/doc
+/coverage
+tags
+
+# Ignore Redis dump file
+dump.rdb
+
+# Ignore generated translations file
+app/assets/javascripts/i18n/translations.js

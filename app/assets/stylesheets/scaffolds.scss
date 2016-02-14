@@ -39,6 +39,8 @@ div {
 
 #notice {
   color: green;
+  text-align: center;
+  font-size: large;
 }
 
 .field_with_errors {
@@ -70,4 +72,15 @@ div {
     font-size: 12px;
     list-style: square;
   }
+}
+
+.header-main {
+    font-size: 16px;
+    font-family: Lato, Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    display: block;
+    text-align: center;
+    background-color: #1B7CB2;
+    padding: 2.2em 2.5em;
 }

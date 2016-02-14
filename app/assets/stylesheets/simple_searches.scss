@@ -1,3 +1,112 @@
 // Place all the styles related to the SimpleSearches controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.search_element {
+  display: inline-block;
+  border: none;
+  margin:10px;
+  line-height: 2;
+  width: 30%;
+  border-radius: 4px;
+  margin-top: -5px;
+
+  label {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    color: white;
+    float: left;
+  }
+  input {
+    border: none;
+    border-radius: 2px;
+    box-shadow: none;
+    color: #09a0db;
+    font-size: 1.5em;
+    height: 30px;
+    margin-top: .25em;
+    padding: .75em;
+    background: #fafafa;
+    border-color: #999;
+    outline: none;
+    width: 96%;
+  }
+
+  &.btn {
+    background-color: #85ce3f;
+    box-sizing: border-box;
+    width: 25%;
+    height: 60px;
+
+    :hover {
+      background-color: #9dd865;
+      cursor: pointer;
+    }
+
+    input {
+      background-color:  #85ce3f;
+      height: 52px;
+      color: white;
+    }
+
+
+  }
+}
+
+.simple_search {
+  margin: 0 auto;
+  text-align: center;
+  width: 80%;
+  background-color: rgba(0,0,0,0.3);
+  border-radius: 8px;
+  height: 80px;
+  padding: 2.2em 2.5em;
+  border: none;
+  display: block;
+}
+
+.results{
+  margin: 13px;
+  padding: 2.2em 10.5em;
+
+  .search-result{
+    margin: 10px;
+    margin-left: 0px;
+    margin-bottom: 30px;
+
+    .job-title {
+      font-size: 3ex;
+      margin-bottom: 10px;
+    }
+
+    .company-name, .location, .date{
+      display: inline-block;
+      margin-right: 10px;
+      text-decoration: none;
+
+    }
+
+    .company-name {
+      font-family: monospace;
+      font-size: large;
+    }
+
+  }
+
+  a {
+    color: #09a0db;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+      cursor: pointer;
+      background-color: transparent;
+    }
+  }
+}
+
+.bottom-paginator {
+  float: right;
+  margin-right: 30px;
+}

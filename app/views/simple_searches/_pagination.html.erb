@@ -1,0 +1,21 @@
+<div class="bottom-paginator">
+  <% if can_have_previous(@current_page) && can_have_last(@current_page, @total_page) %>
+    <%= link_to 'Previous', build_paginator_url(@current_page - 1) %>
+    <%= link_to '1', build_paginator_url(1) %>
+    <span>...</span>
+    <span><%= "#{@current_page}" %></span>
+    <span>...</span>
+    <%= link_to "#{@total_page}", build_paginator_url(@total_page) %>
+    <%= link_to 'Next', build_paginator_url(@current_page + 1) %>
+  <% elsif can_have_previous(@current_page) %>
+      <%= link_to 'Previous', build_paginator_url(@current_page - 1) %>
+      <%= link_to '1', build_paginator_url(1) %>
+      <span>...</span>
+      <span><%= "#{@total_page}" %></span>
+  <% else %>
+      <span>1</span>
+      <span>...</span>
+      <%= link_to "#{@total_page}", build_paginator_url(@total_page) %>
+      <%= link_to 'Next', build_paginator_url(@current_page + 1) %>
+  <% end %>
+</div>

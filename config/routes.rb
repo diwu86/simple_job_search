@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  resources :simple_searches
+  resources :simple_searches, only: [:new, :index, :create]
 
   root to: 'simple_searches#new'
   # The priority is based upon order of creation: first created -> highest priority.
