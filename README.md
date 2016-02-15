@@ -24,7 +24,9 @@ bundle exec rspec
 for heroku deployment, please check heroku/master branch
 
 Next steps:
-Move simple search call(currently using SimpleSearch model) to a search client and make it configurable.
-Move buttons, links inside base_style
-Make this search as a gem instead of an app. This way, different countries can just include this gem in their host app
+* Move simple search call(currently using SimpleSearch model) to a search client and make it configurable.
+* Move buttons, links inside base_style
+* Make this search as a gem instead of an app. This way, different countries can just include this gem in their host app
  and use their own I18n locale and style.
+* Check autocomplete gem for location
+* Find or create a pagination gem that does not use ActiveRecord(Current pagination does not look good)
