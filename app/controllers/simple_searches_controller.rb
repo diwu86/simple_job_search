@@ -3,10 +3,12 @@ class SimpleSearchesController < ApplicationController
   # GET /simple_searches
   # GET /simple_searches.json
   def index
+    #TODO try to use session data here instead of initialize a new simple search every time
     @simple_search =  SimpleSearch.new(keywords: params[:keywords], location: params[:location])
     get_response(params)
     respond_to do |format|
       format.html { render :index}
+      #TODO needs to update status
       format.json { render :index, status: 200 }
     end
   end
@@ -23,6 +25,7 @@ class SimpleSearchesController < ApplicationController
     get_response(params)
     respond_to do |format|
       format.html { render :index}
+      #TODO needs to update status
       format.json { render :index, status: 200 }
     end
   end

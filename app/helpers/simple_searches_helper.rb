@@ -1,4 +1,5 @@
 module SimpleSearchesHelper
+  # build paginator url
   def build_paginator_url(page)
     simple_searches_path + "?keywords=#{@simple_search.keywords}&location=#{@simple_search.location}&page=#{page}"
   end
